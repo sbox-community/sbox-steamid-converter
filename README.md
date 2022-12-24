@@ -43,6 +43,9 @@ Log.Info( SteamIDConverter.ToSteamID32( 1285457645 ) );
 Log.Info( SteamIDConverter.ToSteamID3( 1285457645 ) );
 
 
+Extras;
+SteamIDConverter.DetectSteamID( a_steamid ); //Gives SteamIdentifierType.(SteamID3,SteamID32,SteamID64,Invalid) as enums
+
 
 Results;
 
