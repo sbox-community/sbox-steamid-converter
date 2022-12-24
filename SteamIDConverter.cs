@@ -167,12 +167,12 @@ public static class SteamIDConverter
 	{
 		if ( IsSteamID( steamID ) )
 			return SteamIdentifierType.SteamID;
+		else if ( IsSteamID64( steamID ) )
+			return SteamIdentifierType.SteamID64;
 		else if ( IsSteamID3( steamID ) )
 			return SteamIdentifierType.SteamID3;
 		else if ( IsSteamID32( steamID ) )
 			return SteamIdentifierType.SteamID32;
-		else if ( IsSteamID64( steamID ) )
-			return SteamIdentifierType.SteamID64;
 		else
 			return SteamIdentifierType.Invalid;
 	}
